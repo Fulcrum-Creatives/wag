@@ -1,0 +1,1233 @@
+/*
+Theme Name: Wag
+Author: Ben Irvin
+Description: Wagenbrenner base theme, modification of the Toolbox theme 
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+
+*/
+
+/*--------------------------------------------------------------
+ eric meyer's reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+/* end eric meyer's reset css 
+-------------------------------------------------------------- */
+
+/*
+
+font-family:'Proxima N W01 Bold';
+font-family:'Proxima N W01 Light';
+font-family:'Proxima N W01 Reg';
+
+New colors: #64adf4, #64adf4, #64adf4
+
+Old Green: #8AC43E
+
+
+*/
+
+
+a {
+	color: #003367;
+	text-decoration: none;
+}
+
+a:visted {
+	color: #003367;
+}
+
+a:hover {
+	color: #005BA5;
+}
+
+
+
+#main {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
+.entry-header .entry-title {
+
+	display: none;
+}
+
+.entry-content {
+	padding-top: 10px;
+}
+
+
+
+/* carryover from shobi theme */
+
+body{
+
+	margin:0px;
+	padding:0px;
+	background:#fff;
+	color:#000;
+	text-align:center;
+	font-size:14px;
+	line-height: 20px;
+	font-family:'Proxima N W01 Reg', Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 1.8em;
+}
+
+b, strong {
+	font-family:'Proxima N W01 Bold';
+}
+
+i {
+	font-family:'Proxima N W01 Reg';
+	font-style: italic;
+}
+
+ h1,h2,h3,ul li,form{
+
+	margin:0px;
+	padding:0px;
+	list-style:none;
+} 
+
+
+
+
+ol li {
+	margin-left: 40px;
+	margin-bottom: 15px;
+}
+
+.entry-content h2 {
+	font-size: 1.3em;
+	font-family:'Proxima N W01 Bold';
+}
+
+.entry-content h3 {
+	font-size: 1.1em;
+	font-family:'Proxima N W01 Bold';
+}
+
+
+.clear{
+
+	clear:both;
+
+}
+
+
+
+.main_div{
+
+	margin:auto;
+	width:1000px;
+
+}
+
+
+
+.top-menu-wrapper{
+
+	padding-top:5px;
+	height:36px;
+	background-color: #818286;
+
+	/* background:url(images/top-menu-bg.jpg) repeat-x; */
+	
+background-image: -ms-linear-gradient(bottom, #262626 0%, #818286 100%);
+background-image: -moz-linear-gradient(bottom, #262626 0%, #818286 100%);
+background-image: -o-linear-gradient(bottom, #262626 0%, #818286 100%);
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #262626), color-stop(1, #818286));
+background-image: -webkit-linear-gradient(bottom, #262626 0%, #818286 100%);
+background-image: linear-gradient(to top, #262626 0%, #818286 100%);
+
+}
+
+
+
+.top-menu{
+
+	margin:auto;
+
+	width:1125px;
+
+}
+
+
+
+.top-menu ul{
+
+	float:right;
+
+}
+
+
+
+.top-menu li{
+	float:left;
+	padding:0 5px 0px 5px;
+	color:#fff;
+	/* text-shadow:1px 3px 3px #000000; */
+	font-size:14px;
+	line-height:25px;
+	font-family:'Proxima N W01 Bold';
+}
+
+
+
+.top-menu li a{
+	display:block;
+	color:#FFF;
+	margin-top: -2px;
+}
+
+
+
+.top-menu li .green{
+    padding: 3px 10px 2px;
+    height: 25px;
+	background: none repeat scroll 0 0 #64adf4;
+	
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+
+}
+
+
+
+.top-menu li .orange{
+	padding:3px 10px 2px 10px;
+	height:25px;
+	background:#ffac3e;
+	
+		-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+
+
+}
+
+.top-menu li .dev{
+    padding: 3px 10px 2px;
+    height: 25px;
+	background: none repeat scroll 0 0 #cccc66;
+	
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+
+}
+
+
+
+.facebook-ico{
+
+	margin-right:10px;
+
+}
+
+
+
+.slider-area{
+	position:relative;
+	margin:0 auto;
+	width:1125px;
+
+	line-height:0;
+
+}
+
+
+.slider-area .logo{
+	position:absolute;
+	top:-42px;
+	left:16px;
+	float:left;
+	width:188px;
+	height:188px;
+}
+
+
+.slider-bottom-border{
+	/* height:65px;
+	 background:url(images/slider-botton-border.png) repeat-x; */
+}
+
+/* Yo, check it out, totally going to remake that graphic in CSS */
+
+.slider-bottom-border .bar-1{
+	background-color: #808285;
+	height: 7px;
+}
+
+.slider-bottom-border .bar-color{
+	height: 30px;
+	
+	background-color: #64ADF4;
+	
+
+background-image: -ms-linear-gradient(bottom, #538FC9 0%, #64ADF4 100%);
+background-image: -moz-linear-gradient(bottom, #538FC9 0%, #64ADF4 100%);
+background-image: -o-linear-gradient(bottom, #538FC9 0%, #64ADF4 100%);
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #538FC9), color-stop(1, #64ADF4));
+background-image: -webkit-linear-gradient(bottom, #538FC9 0%, #64ADF4 100%);
+background-image: linear-gradient(to top, #538FC9 0%, #64ADF4 100%);
+
+}
+
+.slider-bottom-border .bar-3{
+	background-color: #2a2a2a;
+	height: 7px;
+}
+
+.slider-bottom-border .bar-shadow{
+	height: 22px;
+	background-color: #fff;
+	
+background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #CCCCCC 100%);
+background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #CCCCCC 100%);
+background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #CCCCCC 100%);
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #CCCCCC));
+background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #CCCCCC 100%);
+background-image: linear-gradient(to top, #FFFFFF 0%, #CCCCCC 100%);
+	
+}
+
+
+
+
+
+.content-wrapper{
+
+	padding-top:20px;
+
+	margin:auto;
+
+	width:1000px;
+
+}
+
+
+
+/* Sidebar Area */
+
+
+
+.sidebar-wrapper{
+
+	float:left;
+	margin-right:49px;
+	font-size:15px;
+	width: 275px;
+
+}
+
+
+
+
+
+.heading-area{
+
+	 padding-top:5px;
+
+	 padding-left:10px;
+
+	 width:267px;
+
+	 height:27px;
+
+	 -webkit-border-radius: 9px;
+
+	 -moz-border-radius: 9px; 
+
+	 border-radius: 9px;
+
+	 background:url(images/heading-bg.png) repeat-x;
+
+	text-align:left;
+
+	 -khtml-border-radius: 9px;
+
+}
+
+
+
+
+
+
+
+
+
+.sidebar-menu{
+	font-family:'Proxima N W01 Light';
+}
+
+
+
+.sidebar-menu li{
+	border-bottom:1px solid #8a8a8a;
+	text-align:left;
+}
+
+
+.sidebar-menu li ul li{
+	border:none;
+}
+
+.sidebar-menu li ul li a, .sidebar-menu li ul li a:hover,  .sidebar-menu li ul li.current_page_item a{
+	margin:0 0 0 30px;
+	padding-left:20px;
+	background:url(images/subMenu.png) left center no-repeat;
+	font-size:12px;
+	height: 10px;
+	padding-top: 0;
+	text-transform: uppercase;
+}
+
+.sidebar-menu .sub-menu {
+	margin-bottom: 10px;	
+}
+
+.sidebar-menu li a{
+	padding-left:25px;
+	color:#003367;
+	height: 30px;
+	display: inline-block;
+	padding-top: 15px;
+}
+
+
+
+.sidebar-menu li a:hover, .sidebar-menu li.current_page_item a{
+	background:url(images/bullet.png) left center no-repeat;
+}
+
+.sidebar-menu ul.sub-menu li a, .sidebar-menu ul.sub-menu li.current_page_item a {
+	background: none;
+}
+
+.sidebar-menu ul.sub-menu li a:before, .sidebar-menu ul.sub-menu li.current_page_item a:before {
+	content: "– ";
+}
+
+.sidebar-menu ul.sub-menu li a:hover:before, .sidebar-menu ul.sub-menu li.current_page_item a:hover:before {
+	content: "– ";
+	color: #64ADF4;
+	}
+
+
+
+.widget-area {
+	text-align: left;
+}
+
+.commercial-area{
+
+	float:left;
+
+	padding-top:15px;
+
+	color:#716558;
+
+	text-align:left;
+
+	font-size:14px;
+
+}
+
+
+
+/* Right Content Area */
+
+.content-area{
+	float:left;
+	width:670px;
+	color:#716558;
+	margin-top: 10px;
+}
+
+
+
+.content-left-area{
+
+	float:left;
+
+	margin-right:35px;
+
+	width:250px;
+
+}
+
+
+
+.display-stuff{
+
+	float:left;
+
+	margin:0 12px;
+
+	width:248px;
+
+	height:144px;
+
+	background:url(images/diplay-stuff-bg.jpg) no-repeat;
+
+}
+
+
+
+.display-stuff h1{
+
+	padding:30px 10px 10px 0;
+
+	color:#8bc53f;
+
+	font-weight:normal;
+
+	font-size:30px;
+
+}
+
+
+
+
+
+.content-right-area{
+
+	float:left;
+
+	width:250px;
+
+}
+
+
+
+.bott-area{
+
+	padding-top:30px;
+
+	text-align:left;
+
+	letter-spacing:1px;
+
+}
+
+
+
+.bott-area h2{
+
+	padding-bottom:7px;
+
+	color:#716558;
+
+	font-weight:bold;
+
+	font-size:16px;
+
+}
+
+
+
+.readmore{
+
+	float:right;
+
+}
+
+
+
+.readmore a{
+
+	color:#716558;
+
+	font-size:14px;
+
+}
+
+
+
+.readmore a:hover{
+
+	text-decoration:underline;
+
+}
+
+
+
+.rental-area{
+
+	margin-top:7px;
+
+	padding-top:7px;
+
+	padding-bottom:15px;
+
+	border-top:1px solid #666;
+
+}
+
+
+
+.property-ico{
+
+	float:left;
+
+	margin-right:10px;
+
+}
+
+
+
+.property-details{
+
+	float:left;
+
+	padding-top:10px;
+
+}
+
+
+
+/* Start Inner Page Content Area */
+
+.inner-page-content .white-top-cor, .inner-page-content .white-bot-cor{
+
+	width:669px;
+
+	height:30px;
+
+	background:url(images/white-top-cor.png) no-repeat;
+
+}
+
+
+
+.inner-page-content .white-bot-cor{
+	margin-top: -20px;
+	background:url(images/white-bot-cor.png) no-repeat;
+	background-color: #fff;
+
+}
+
+
+
+.inner-page-content .white-bg-rep{
+
+	padding:0 20px;
+
+	width:629px;
+
+	background:url(images/white-rep.png) repeat-y;
+
+	text-align:left;
+
+}
+
+
+
+/* Page Left Content */
+
+.inner-page-content .page-left-content{
+
+	float:left;
+
+	margin:0 20px 0 45px;
+
+	width:154px;
+
+}
+
+
+
+/* Page Right Content */
+
+.inner-page-content .page-right-content{
+
+	float:left;
+
+	width:410px;
+
+}
+
+
+
+.inner-page-content .white-left{
+
+	float: left;
+
+    padding-right: 20px;
+
+    width: 156px;
+
+	}
+
+	
+
+.inner-page-content .white-right{
+
+	float:left;
+
+	width:430px;
+
+	}
+
+	
+
+.inner-page-content .attachment_image{
+    overflow: hidden;
+    width: 146px;
+
+    border: 7px solid #699f49;
+    border-radius: 5px 5px 5px 5px;
+    line-height: 0;
+
+}
+
+
+
+.inner-page-content .white-left ul{
+
+	margin-top:20px;	
+
+}
+
+
+
+.inner-page-content .white-left ul li a{
+
+	display:block;
+
+	margin-bottom:10px;
+
+	padding:5px 5px 5px 8px;
+
+	-webkit-border-radius: 5px;
+
+	-moz-border-radius: 5px;
+
+	border-radius: 5px;
+
+	background:#a9d471;
+
+	color:#fff;
+
+	font-weight:bold;
+
+	font-size:13px;
+
+}
+
+
+
+.inner-page-content .sub-pages-menu{
+
+	overflow:hidden;
+
+	padding-left:25px;
+
+}
+
+
+
+.inner-page-content .sub-pages-menu li{
+
+	float:left;
+	margin:0 6px 0 0;
+
+}
+
+
+
+.inner-page-content .sub-pages-menu li a{
+	display:block;
+	padding:0 20px;
+	-webkit-border-top-right-radius: 7px;
+	border-top-right-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	border-top-left-radius: 7px;
+	 background:url(images/orange_tab_hover.png) repeat-x; 
+	color:#716557;
+	text-align:center;
+	font-size:1em;
+	line-height:38px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	
+	font-family:'Proxima N W01 Reg';
+
+}
+
+
+
+.inner-page-content .sub-pages-menu li a:hover, .inner-page-content .sub-pages-menu li.current_page_item a{
+	/* background:url(images/orange_tab.png) repeat-x; */
+	color:#fff;
+	background-color: #64adf4;
+	
+	/* gradient */
+	
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom, #64ADF4 0%, #538FC9 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #64ADF4 0%, #538FC9 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #64ADF4 0%, #538FC9 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #64ADF4), color-stop(1, #538FC9));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #64ADF4 0%, #538FC9 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top, #64ADF4 0%, #538FC9 100%);
+
+} 
+
+
+
+.inner-page-content .sub-pages-menu .left{
+
+	display:block;
+
+	float:left;
+
+	width:17px;
+
+	height:41px;
+
+	background:url(images/subMenuLeft.png) no-repeat;
+
+}
+
+	
+
+	/*
+
+		subMenuLeft
+
+		subMenuCntr.png
+
+		subMenuRight
+
+	*/
+	
+
+.search_our_main{
+	margin:35px auto 25px auto;
+	width:270px;
+	height:110px;
+	background:url(images/search_our.png) no-repeat;
+	text-align:center;
+}
+
+.search_our_main a{
+	display:block;
+	padding:15px 0 20px 0;
+	color:#a9d471;
+	text-align:center;
+	font-size:32px;
+}
+
+.comma_left{
+	padding:30px 0 0 46px;
+	width:233px;
+	background:url(images/comma_left.png) left top no-repeat;
+	text-align:left;
+}
+
+.comma_right{
+	padding:0 0px 40px 0;
+	background:url(images/comma_right.png) right bottom no-repeat;
+	text-align:left;
+}
+
+.comma_text{
+	color:#012d5a;
+	text-align:left;
+	font-size:20px;
+}
+
+.comma_bottom_text{
+	margin:10px auto 40px;
+	width:260px;
+	color:#726658;
+	text-align:center;
+	font-size:12px;
+}
+
+.home .entry-title {
+	display: none;
+	}
+
+.home-boxes {
+	clear: both;
+	margin-bottom: 15px;
+	height: 150px;
+}
+
+.home-boxes .home-box {
+	width: 48%;
+	height: 100px;
+	text-align: center;
+	float: left;
+	padding-top: 20px;
+	
+	
+	-moz-box-shadow:    inset 0 0 20px #ccc;
+   -webkit-box-shadow: inset 0 0 20px #ccc;
+   box-shadow:         inset 0 0 20px #ccc;
+
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}
+
+.home-box h1 {
+	margin-top:15px;
+	margin-bottom: 20px;
+}
+
+.home-boxes .first{
+
+	margin-right: 20px;
+	
+	}
+	
+.widget-box {
+	text-align: center;
+}
+
+.widget-box a {
+	 color: #64adf4;
+    font-family: 'Proxima N W01 Light';
+    font-size: 1.5em;
+    
+    display: block;
+    
+    width: 90%;
+	padding: 20px;
+	margin: 30px 0 30px 0;
+
+		-moz-box-shadow:    inset 0 0 20px #ccc;
+   -webkit-box-shadow: inset 0 0 20px #ccc;
+   box-shadow:         inset 0 0 20px #ccc;
+
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}
+
+.home-boxes .home-box:hover, .widget-box a:hover {
+	-moz-box-shadow:    inset 0 0 20px #6b6b6b;
+   -webkit-box-shadow: inset 0 0 20px #6b6b6b;
+   box-shadow:         inset 0 0 20px #6b6b6b;
+}
+
+.home-boxes .home-box h1{
+	color: #64adf4;
+	font-size: 4em;
+	font-family:'Proxima N W01 Light';
+}
+
+.entry-title, .entry-title a, .entry-title a:visited {
+	color: #64adf4;
+	font-size: 1.5em;
+	font-family:'Proxima N W01 Light';
+	
+	margin-bottom: 10px;
+}
+
+
+#agents li {
+	display: inline-block;
+	width: 150px;
+	margin: 10px 20px 10px 20px;
+	font-size: 1.2em;
+	height: 200px;
+	text-align: center;
+	float: left;
+}
+
+
+#agents li img {
+	margin-bottom: 10px;
+}
+	
+/* #text-3{
+	float:left;
+	margin:0 0 0 190px;
+	width:272px;
+	border-right:#726658 1px solid;
+	text-align:left;
+	font-size:15px;
+} 
+
+#text-4{
+	float:left;
+	margin:0 0 0 20px;
+	width:290px;
+	text-align:left;
+	font-size:15px;
+} */
+
+#agents {
+	display: block;
+	clear: both;
+	
+	
+	font-size: .9em;
+}
+
+
+
+.agent-image {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.testimonials li {
+	padding: 20px 0 20px 0 !important; 
+	border-bottom: 1px solid #ccc;
+}
+
+.testimonial-source {
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#agent-left {
+	width: 200px;
+	float: left;
+	display: inline-block;
+}
+
+#agent-right {
+	width: 420px;
+	float: right;
+	display: inline-block;
+}
+
+#agent-testimonials {
+	clear: both;
+	margin-top: 40px;
+}
+
+.agent-image img, #agents li img {
+	border: 2px solid #64adf4;
+}
+
+.agent-meta .button a{
+	background-color: #64adf4;
+	padding: 10px;
+	color: #fff;
+	margin: 10px 0 10px 0;
+	display: inline-block;
+	width: 150px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#random-testimonial .testimonial-body p {
+	margin: 0;
+}
+
+#random-testimonial .testimonial-body {
+	font-family:'Proxima N W01 Light';
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 15px;
+	color: #003367;
+}
+
+#random-testimonial .testimonial-body a {
+	font-size: .7em;
+}
+
+#random-testimonial .testimonial-body:before {
+	color: #64adf4;
+	content: "“";
+	font-size: 6em;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: -40px;
+	z-index: -5;
+	opacity: .5;
+}
+#random-testimonial .testimonial-body:after {
+	color: #64adf4;
+	content: "”";
+	font-size: 6em;
+	position: absolute;
+	z-index: -5;
+	margin-left: 180px;
+	margin-top: 10px;
+	opacity: .5;
+}
+
+
+#random-testimonial .testimonial-source {
+	font-size: .9em;
+}
+
+
+#wnt_quicksearch input, #wnt_quicksearch select  {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* footer stuff below */
+
+.footer_wrapper {
+background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #C7C7C7 100%);
+background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #C7C7C7 100%);
+background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #C7C7C7 100%);
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #C7C7C7));
+background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C7C7C7 100%);
+background-image: linear-gradient(to top, #FFFFFF 0%, #C7C7C7 100%);
+
+min-height: 100px;
+margin-top: 30px;
+
+color: #4f4f4f;
+}
+
+.footer_wrapper .color-bar {
+	height: 10px;
+	background-color: #64adf4;
+}
+
+.footer-cont {
+	margin: 0 auto;
+    width: 900px;
+}
+
+.footer-logos {
+	float: left;
+	width: 25%;
+
+}
+
+.footer-logos .footer-link-1{
+	width: 50px;
+	margin: 20px;
+	float: left;
+}
+
+.footer-widgets {
+	float: right;
+}
+
+.footer-widgets .footer-address {
+	float: left;
+	display: inline-block;
+	padding: 5px 20px 5px 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footer-widgets .footer-address h1 {
+	font-family:'Proxima N W01 Bold';
+}
+
+.footer-widgets .first {
+	border-right: 1px solid #4f4f4f;
+}
+
+.gform_wrapper .gsection .gfield_label, .gform_wrapper h2.gsection_title, .gform_wrapper h3.gform_title {
+	font-family:'Proxima N W01 Bold';
+	font-weight: 300 !important;
+}
+
+/* slider stuff */
+
+.nivo-controlNav {
+	display: none;
+}
+
+.theme-default .nivoSlider {
+	box-shadow: none;
+	margin-bottom: 0;
+	z-index: 5;
+}
+
+.slider-area .logo {
+	z-index: 10;
+}
+
+.slider-text {
+	margin-top: -200px;
+	margin-right: 30px;
+	width: 1095px;
+	position: absolute;
+	color: #fff;
+	z-index: 10;
+	font-size: 4em;
+	text-align: right;
+	line-height: 1.2em;
+	font-family:'Proxima N W01 Light';
+
+	
+	text-shadow: black 0.1em 0.1em 0.2em
+}
+
+
+.slider-text b {
+	font-family:'Proxima N W01 Reg';
+	font-weight: 300 !important;
+}
+
+/* end slider stuff */
+
+
